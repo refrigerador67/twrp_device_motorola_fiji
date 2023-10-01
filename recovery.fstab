@@ -1,0 +1,13 @@
+# mount point    fstype             device		device2			flags
+/boot		emmc	/dev/block/platform/bootdevice/by-name/boot		flags=backup=1;display="Boot";slotselect
+/vbmeta		emmc	/dev/block/platform/bootdevice/by-name/vbmeta			flags=display="Vbmeta";backup=1;flashimg=1;slotselect
+/system_root	ext4	/dev/block/platform/bootdevice/by-name/system		flags=display="System";wipeingui;backup=0;slotselect
+/system_image	emmc	/dev/block/by-name/system				flags=backup=1;flashimg=1
+/data		ext4	/dev/block/platform/bootdevice/by-name/userdata		flags=fileencryption=aes-256-cts
+/vendor		ext4	/dev/block/platform/bootdevice/by-name/vendor			flags=display="Vendor";wipeingui;slotselect
+/vendor_image	emmc	/dev/block/by-name/vendor				flags=backup=1;flashimg=1
+
+
+# External devices
+/external_sd	auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="Micro SD card";storage;wipeingui;removable
+/usb_otg            auto      /dev/block/sda1       /dev/block/sda                                  flags=display="USB-OTG";storage;wipeingui;removable
