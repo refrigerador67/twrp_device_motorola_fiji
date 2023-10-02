@@ -37,9 +37,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
 
-#PRODUCT_PACKAGES += \
-#    bootctrl.mt6765
-
 #PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 #    bootctrl.mt6765 \
 #    libgptutils \
@@ -51,4 +48,6 @@ PRODUCT_PACKAGES += \
     cppreopts.sh \
     update_engine \
     update_verifier \
-    update_engine_sideload
+    update_engine_sideload \
+    bootctrl.mt6765 \
+    bootctrl 
