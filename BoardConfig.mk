@@ -51,7 +51,8 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # A/B
-AB_OTA_UPDATER := true
+#TODO: Slot chaging with compiled bootctrl
+AB_OTA_UPDATER := false
 TW_INCLUDE_REPACKTOOLS := true
 
 # Kernel
